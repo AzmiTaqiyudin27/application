@@ -9,3 +9,5 @@ class RiwayatPindaiActivity : AppCompatActivity() {
         setContentView(R.layout.activity_riwayat_pindai)
     }
 }
+
+//tes
