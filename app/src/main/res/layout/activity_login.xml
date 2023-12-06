@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="206dp"
+        android:layout_height="182dp"
+        android:contentDescription="@string/logo"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"/>
+    <TextView
+        android:id="@+id/diagnofishNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:lineSpacingExtra="2sp"
+        android:text="@string/diagnofish"
+        android:textColor="@color/robin_egg_blue"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/selamatDatang"
+        app:layout_constraintTop_toTopOf="@+id/selamatDatang" />
+
+    <TextView
+        android:id="@+id/selamatDatang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:lineSpacingExtra="2sp"
+        android:text="@string/selamatDatang"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/tvMasuk"
+        android:layout_width="66dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:lineSpacingExtra="4sp"
+        android:textSize="18sp"
+        android:textColor="@color/nero_50"
+        android:text="@string/masuk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selamatDatang" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="38.12dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="3sp"
+        android:text="@string/email"
+        android:textSize="14sp"
+        android:textColor="@color/nero_50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMasuk" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/frame_10"
+        android:hint="@string/appuser_mail"
+        android:textSize="14sp"
+        android:textColor="@color/nero_50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+    <TextView
+        android:id="@+id/tvKataSandi"
+        android:layout_width="74dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="3sp"
+        android:text="@string/kata_sandi"
+        android:textSize="14sp"
+        android:textColor="@color/nero_50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+    <EditText
+        android:id="@+id/edtKataSandi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/frame_10"
+        android:hint="@string/edtKataSandi"
+        android:textSize="14sp"
+        android:textColor="@color/nero_50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvKataSandi"/>
+
+    <TextView
+        android:id="@+id/lupa_kata_sandi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:lineSpacingExtra="3sp"
+        android:text="@string/lupaKataSandi"
+        android:textSize="14sp"
+        android:textColor="@color/red_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtKataSandi" />
+
+    <Button
+        android:id="@+id/btnMasuk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="16dp"
+        android:lineSpacingExtra="1sp"
+        android:text="@string/masuk"
+        android:textColor="@color/nero_2"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lupa_kata_sandi" />
+
+    <TextView
+        android:id="@+id/belum_punya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/belumPunyaAkun"
+        android:textSize="12sp"
+        android:textColor="@color/nero_50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.371"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMasuk" />
+
+
+    <TextView
+        android:id="@+id/daftar_disi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:lineSpacingExtra="3sp"
+        android:text="@string/daftarDisini"
+        android:textSize="12sp"
+        android:textColor="@color/robin_egg_blue"
+        app:layout_constraintStart_toEndOf="@+id/belum_punya"
+        app:layout_constraintTop_toTopOf="@+id/belum_punya" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
